@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+<span id="feedback">Please, feel free to leave a commentary</span>
+<input id="input" type="text">
+<button id="btn" onclick="postCommentary()">Send</button>
+  
+<script>
+  function postCommentary() {
+  	commentary = document.getElementById('input').value;
+  	document.getElementById("feedback").innerHTML =  commentary;
+  }
+</script>
+
+</body>
+</html>
+
+<!-- <img src='https://images-na.ssl-images-amazon.com/images/I/71+mDoHG4mL.png' onclick='alert(1);'/> -->
+
